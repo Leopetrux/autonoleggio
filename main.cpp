@@ -4,7 +4,7 @@ using namespace std;
 
 struct dati_auto
 {
-    string categoria, marca, modello, colore;
+    string categoria, marca, modello, colore, cate;
     char lun, mar, mer, gio, ven, sab, dom;
     };
 void carica_vet(dati_auto vet_auto[])
@@ -65,35 +65,163 @@ void cerca_auto(dati_auto vet_auto[])
     }
     else
     {
-        if (cate=="utilitaria")
+       for (int i=0; i<7; i++)
         {
-            for (int i=0; i<7; i++)
+            if (vet_auto[i].cate=="autoritaria")
             {
-                if (giorno=="lunedi")
-                {
-                    if (vet_auto[i].lun=='L')
+               if (vet_auto[i].lun=='L')
                     {
                         cout<<vet_auto[i].marca<<" "<<vet_auto[i].modello<<" "<<vet_auto[i].colore<<" ";
                     }
-                }
-                else if (giorno=="martedi")
-                {
-                    if(vet_auto[i].mar=='L')
-                    {
-                        cout<<vet_auto[i].marca<<" "<<vet_auto[i].modello<<" "<<vet_auto[i].colore<<" ";
-                    }
-                }
-                else if (giorno=="mercoledi")
-                {
-                    if(vet_auto[i].mer=='L')
-                    {
-                        cout<<vet_auto[i].marca<<" "<<vet_auto[i].modello<<" "<<vet_auto[i].colore<<" ";
-                    }
-                }
-            }
 
-        }
+
+                    if (vet_auto[i].mar=='L')
+                    {
+                        cout<<vet_auto[i].marca<<" "<<vet_auto[i].modello<<" "<<vet_auto[i].colore<<" ";
+                    }
+
+
+                    if (vet_auto[i].mer=='L')
+                    {
+                        cout<<vet_auto[i].marca<<" "<<vet_auto[i].modello<<" "<<vet_auto[i].colore<<" ";
+                    }
+
+                    if (vet_auto[i].gio=='L')
+                    {
+                        cout<<vet_auto[i].marca<<" "<<vet_auto[i].modello<<" "<<vet_auto[i].colore<<" ";
+                    }
+
+                    if (vet_auto[i].ven=='L')
+                    {
+                        cout<<vet_auto[i].marca<<" "<<vet_auto[i].modello<<" "<<vet_auto[i].colore<<" ";
+                    }
+
+                    if (vet_auto[i].sab=='L')
+                    {
+                        cout<<vet_auto[i].marca<<" "<<vet_auto[i].modello<<" "<<vet_auto[i].colore<<" ";
+                    }
+
+                    if (vet_auto[i].dom=='L')
+                    {
+                        cout<<vet_auto[i].marca<<" "<<vet_auto[i].modello<<" "<<vet_auto[i].colore<<" ";
+                    }
+                }
+           }
     }
+   else
+    {
+        for (int i=0; i<7; i++)
+        {
+           if(vet_auto[i].cate=="lusso")
+       {
+      if (vet_auto[i].lun=='L')
+      {
+          cout<<vet_auto[i].marca<<" "<<vet_auto[i].modello<<" "<<vet_auto[i].colore<<" ";
+      }
+      if (vet_auto[i].mar=='L')
+      {
+          cout<<vet_auto[i].marca<<" "<<vet_auto[i].modello<<" "<<vet_auto[i].colore<<" ";
+      }
+      if (vet_auto[i].mer=='L')
+      {
+          cout<<vet_auto[i].marca<<" "<<vet_auto[i].modello<<" "<<vet_auto[i].colore<<" ";
+      }
+      if (vet_auto[i].gio=='L')
+      {
+          cout<<vet_auto[i].marca<<" "<<vet_auto[i].modello<<" "<<vet_auto[i].colore<<" ";
+      }
+      if (vet_auto[i].ven=='L')
+      {
+          cout<<vet_auto[i].marca<<" "<<vet_auto[i].modello<<" "<<vet_auto[i].colore<<" ";
+      }
+      if (vet_auto[i].sab=='L')
+      {
+          cout<<vet_auto[i].marca<<" "<<vet_auto[i].modello<<" "<<vet_auto[i].colore<<" ";
+      }
+      if (vet_auto[i].dom=='L')
+      {
+          cout<<vet_auto[i].marca<<" "<<vet_auto[i].modello<<" "<<vet_auto[i].colore<<" ";
+      }
+    }
+   }
+    }
+
+ else
+    {
+        for (int i=0; i<7; i++)
+        {
+           if(vet_auto[i].cate=="sportiva")
+       {
+      if (vet_auto[i].lun=='L')
+      {
+          cout<<vet_auto[i].marca<<" "<<vet_auto[i].modello<<" "<<vet_auto[i].colore<<" ";
+      }
+      if (vet_auto[i].mar=='L')
+      {
+          cout<<vet_auto[i].marca<<" "<<vet_auto[i].modello<<" "<<vet_auto[i].colore<<" ";
+      }
+      if (vet_auto[i].mer=='L')
+      {
+          cout<<vet_auto[i].marca<<" "<<vet_auto[i].modello<<" "<<vet_auto[i].colore<<" ";
+      }
+      if (vet_auto[i].gio=='L')
+      {
+          cout<<vet_auto[i].marca<<" "<<vet_auto[i].modello<<" "<<vet_auto[i].colore<<" ";
+      }
+      if (vet_auto[i].ven=='L')
+      {
+          cout<<vet_auto[i].marca<<" "<<vet_auto[i].modello<<" "<<vet_auto[i].colore<<" ";
+      }
+      if (vet_auto[i].sab=='L')
+      {
+          cout<<vet_auto[i].marca<<" "<<vet_auto[i].modello<<" "<<vet_auto[i].colore<<" ";
+      }
+      if (vet_auto[i].dom=='L')
+      {
+          cout<<vet_auto[i].marca<<" "<<vet_auto[i].modello<<" "<<vet_auto[i].colore<<" ";
+      }
+    }
+   }
+    }
+
+ else
+    {
+        for (int i=0; i<7; i++)
+        {
+           if(vet_auto[i].cate=="furgone")
+       {
+      if (vet_auto[i].lun=='L')
+      {
+          cout<<vet_auto[i].marca<<" "<<vet_auto[i].modello<<" "<<vet_auto[i].colore<<" ";
+      }
+      if (vet_auto[i].mar=='L')
+      {
+          cout<<vet_auto[i].marca<<" "<<vet_auto[i].modello<<" "<<vet_auto[i].colore<<" ";
+      }
+      if (vet_auto[i].mer=='L')
+      {
+          cout<<vet_auto[i].marca<<" "<<vet_auto[i].modello<<" "<<vet_auto[i].colore<<" ";
+      }
+      if (vet_auto[i].gio=='L')
+      {
+          cout<<vet_auto[i].marca<<" "<<vet_auto[i].modello<<" "<<vet_auto[i].colore<<" ";
+      }
+      if (vet_auto[i].ven=='L')
+      {
+          cout<<vet_auto[i].marca<<" "<<vet_auto[i].modello<<" "<<vet_auto[i].colore<<" ";
+      }
+      if (vet_auto[i].sab=='L')
+      {
+          cout<<vet_auto[i].marca<<" "<<vet_auto[i].modello<<" "<<vet_auto[i].colore<<" ";
+      }
+      if (vet_auto[i].dom=='L')
+      {
+          cout<<vet_auto[i].marca<<" "<<vet_auto[i].modello<<" "<<vet_auto[i].colore<<" ";
+      }
+    }
+   }
+    }
+
 }
 void menu()
 {
@@ -109,11 +237,11 @@ void menu()
         switch(scelta)
         {
          case 1:
-
+        carica_vet(vet_auto);
+        leggi_file(vet_auto);
          break;
-
          case 2:
-
+         cerca_auto(vet_auto);
          break;
         }
     }
